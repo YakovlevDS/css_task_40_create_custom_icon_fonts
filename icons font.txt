@@ -1,0 +1,42 @@
+Для бесплатных:
+=================
+1. скачиваем шрифты с сафта free for web
+https://use.fontawesome.com/releases/v6.1.1/fontawesome-free-6.1.1-web.zip
+
+2. В html подключаем стили из скачанного каталога  free awesome перед основными,
+ положив их копию себе в проект рядом с style.css
+
+3.добавляем для fab  "::before"(6111 строка примерно)
+
+4. Если  переименовуем папку с фонтами , то в стилях правильно пути переименовать!
+
+5. анимация ... добавить fa-spin  "::before" и свойство display:inline-block.(126строка примерно)
+
+6. В html  назначить этот клас "fa-spin"  иконке
+в docs awesome styling подробно про классы анимации
+
+https://fontawesome.com/docs/web/style/animate
+
+Для платных шрифтов и с figma:
+==============================
+1. pro - f12=> ctrl+F=>"<svg" копируем элемент в devtools
+https://fontawesome.com/icons/jsfiddle?s=brands
+2.создаем файл в папке icons проекта и втавляем код svg
+
+3.просмотр в проводнике svg
+https://github.com/tibold/svg-explorer-extension/releases
+
+4. C figma предварительно выбрать иконку и ctrl+shift+o (меню -обект- outline stroke)
+
+5.Сервис создания иконочного шрифта IcoMoon:
+ https://icomoon.io
+меню справа. icon to set =>выбираем иконки наши.
+удаляем цвета кликнув по прогресс цветному справа.
+выбираем иконки и generate font если надо настраиваем -шестиренка -download
+6.из папки папку font  и файл стили переименованные заношу в проект
+7. подкл файл стилей перед нашими
+8 редактируем путь к файлам шрифтов. "../" в стилях
+9. добавляем "::before" ([class^="icon-"]::before, [class*=" icon-"]::before )
+
+
+

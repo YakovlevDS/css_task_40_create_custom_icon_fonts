@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'icom';
+    src: url('../fonts/icom.eot?aqezqw');
+    src: url('../fonts/icom.eot?aqezqw#iefix') format('embedded-opentype'), url('../fonts/icom.ttf?aqezqw') format('truetype'), url('../fonts/icom.woff?aqezqw') format('woff'), url('../fonts/icom.svg?aqezqw#icom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icom' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-phone:before {
+    content: "\e900";
+}
